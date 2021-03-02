@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/apidirect" name="APIDirect" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property expression="get-property('query.param.postId')" name="uri.var.postIdVal" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="fn:concat('QUERYPARAM-POSTID: ', get-property('uri.var.postIdVal'))" name="[APIDirect]-[01]"/>
+            </log>
+            <call>
+                <endpoint key="TypiCodeDir"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

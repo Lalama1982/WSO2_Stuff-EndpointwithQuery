@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="APIDirect" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/APIDirect.xml</file>
+    </artifact>
+    <artifact name="TypiCodeDir" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/TypiCodeDir.xml</file>
+    </artifact>
+    <artifact name="APIViaAPIM" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/APIViaAPIM.xml</file>
+    </artifact>
+    <artifact name="TypiCodeDirPathV" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/TypiCodeDirPathV.xml</file>
+    </artifact>
+    <artifact name="APIDirectPathV" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/APIDirectPathV.xml</file>
+    </artifact>
+    <artifact name="TypiCodeGetPostAPIM" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/TypiCodeGetPostAPIM.xml</file>
+    </artifact>
+    <artifact name="TypiCodeGetCommentsAPIM" groupId="com.example.endpoint" version="1.0.0" type="synapse/endpoint" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/endpoints/TypiCodeGetCommentsAPIM.xml</file>
+    </artifact>
+    <artifact name="APIViaAPIMPostComments" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/APIViaAPIMPostComments.xml</file>
+    </artifact>
+    <artifact name="APIviaAPI2PostComments" groupId="com.example.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/APIviaAPI2PostComments.xml</file>
+    </artifact>
+</artifacts>

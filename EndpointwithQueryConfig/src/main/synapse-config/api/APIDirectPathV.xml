@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/apidirectpathv" name="APIDirectPathV" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property expression="get-property('query.param.postId')" name="uri.var.postIdPath" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="fn:concat('QUERY-PARAM-POSTID: ', get-property('uri.var.postIdPath'))" name="[APIDirectPathV]-[01]"/>
+            </log>
+            <call>
+                <endpoint key="TypiCodeDirPathV"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>

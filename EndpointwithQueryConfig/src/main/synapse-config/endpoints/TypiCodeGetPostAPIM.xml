@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoint name="TypiCodeGetPostAPIM" xmlns="http://ws.apache.org/ns/synapse">
+    <http method="get" uri-template="https://localhost:8243/typicode/1.0.0/posts/{uri.var.postIdIn}">
+        <suspendOnFailure>
+            <initialDuration>-1</initialDuration>
+            <progressionFactor>1.0</progressionFactor>
+        </suspendOnFailure>
+        <markForSuspension>
+            <retriesBeforeSuspension>0</retriesBeforeSuspension>
+        </markForSuspension>
+    </http>
+    <property name="apikey" value="eyJ4NXQiOiJOVGRtWmpNNFpEazNOalkwWXpjNU1tWm1PRGd3TVRFM01XWXdOREU1TVdSbFpEZzROemM0WkE9PSIsImtpZCI6ImdhdGV3YXlfY2VydGlmaWNhdGVfYWxpYXMiLCJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbkBjYXJib24uc3VwZXIiLCJhcHBsaWNhdGlvbiI6eyJvd25lciI6ImFkbWluIiwidGllclF1b3RhVHlwZSI6bnVsbCwidGllciI6IjEwUGVyTWluIiwibmFtZSI6IlR5cGlDb2RlQXBwIiwiaWQiOjgsInV1aWQiOiI4YzEzYjg2OS02MzczLTQxZTUtYmZjNS1lMjc1NmU2OWE5NzYifSwiaXNzIjoiaHR0cHM6XC9cL2xvY2FsaG9zdDo5NDQzXC9vYXV0aDJcL3Rva2VuIiwidGllckluZm8iOnsiQnJvbnplIjp7InRpZXJRdW90YVR5cGUiOiJyZXF1ZXN0Q291bnQiLCJncmFwaFFMTWF4Q29tcGxleGl0eSI6MCwiZ3JhcGhRTE1heERlcHRoIjowLCJzdG9wT25RdW90YVJlYWNoIjp0cnVlLCJzcGlrZUFycmVzdExpbWl0IjowLCJzcGlrZUFycmVzdFVuaXQiOm51bGx9fSwia2V5dHlwZSI6IlBST0RVQ1RJT04iLCJwZXJtaXR0ZWRSZWZlcmVyIjoiIiwic3Vic2NyaWJlZEFQSXMiOlt7InN1YnNjcmliZXJUZW5hbnREb21haW4iOiJjYXJib24uc3VwZXIiLCJuYW1lIjoiVHlwaUNvZGVNYWluIiwiY29udGV4dCI6IlwvdHlwaWNvZGVcLzEuMC4wIiwicHVibGlzaGVyIjoiYWRtaW4iLCJ2ZXJzaW9uIjoiMS4wLjAiLCJzdWJzY3JpcHRpb25UaWVyIjoiQnJvbnplIn1dLCJwZXJtaXR0ZWRJUCI6IiIsImlhdCI6MTYxMjQ3NjU5NiwianRpIjoiMTBjNjZkZmUtZTA3MS00NzczLThjMmEtN2M3MWM0MzdkYjJhIn0=.r3-ClKwH58sFofimdU4mR2XPI8YTv9sM50S5xx9IyqM4M6rzg2uGCcuzIy8iqlY_ptQ9HjOliyvzr74pxOKieOsNHSKE2fcj7j17029JVRSDGriIkMWXt6IR6opLlwpxyGoeTt9p7G1bCsN3rvais2uBgQbwzQJ6aAQVeBf6k8nT8KfqCfSGWQ8qbDmSqPbBdeMRAuWa28SbeTVAnT_XMzMCjCmIIuLywSpRMtqa_j0jxHkxtfMilRbWK8BF315ZEZKw2MikjPqK8FhYNGwAeNRXlC0SBI1g2_zP00Z8_ujaq-MAxRV_fVPguvEWGvTSZy9bzMWMDVDD7cmgHQslNQ=="/>
+</endpoint>

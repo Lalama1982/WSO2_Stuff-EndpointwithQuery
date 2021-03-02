@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/getpostcomments" name="APIViaAPIMPostComments" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET">
+        <inSequence>
+            <property expression="get-property('query.param.postId')" name="uri.var.postIdIn" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="fn:concat('QUERY-PARAM-POSTID: ', get-property('uri.var.postIdIn'))" name="[APIViaAPIMPostComments]-[01]"/>
+            </log>
+            <call>
+                <endpoint key="TypiCodeGetPostAPIM"/>
+            </call>
+            <log level="custom">
+                <property expression="json-eval($)" name="[APIViaAPIMPostComments]-[02]-RESPONSE"/>
+            </log>
+            <property expression="json-eval($.id)" name="uri.var.postIdPath" scope="default" type="STRING"/>
+            <log level="custom">
+                <property expression="fn:concat('API-RESP-BODY-POSTID: ', get-property('uri.var.postIdPath'))" name="[APIViaAPIMPostComments]-[03]"/>
+            </log>
+            <call>
+                <endpoint key="TypiCodeDirPathV"/>
+            </call>
+            <respond/>
+        </inSequence>
+        <outSequence/>
+        <faultSequence/>
+    </resource>
+</api>
